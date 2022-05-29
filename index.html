@@ -4,22 +4,22 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
-    <header class="aaa">
-      <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
-      <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">
+  <body class = "wrapper">
+    <header class="header">
+      <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix" class = "header__img">
+      <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
       </a>
     </header>
-    <main class="centered-main-page-element">
-      <h3 id="topsectionforaddingelementtolist">
+    <main class="tasks">
+      <h3 class="tasks__title">
         <label for="new-task">Add Item</label>
-        <div class="task-row-wrapper">
-          <input id="new-task"class="task" type="text">
+        <div class="tasks__new-task">
+          <input id="new-task" class="tasks__new-task_input" type="text">
           <button>Add</button>
         </div>
       </h3>
-      <h3>Todo</h3>
+      <h3 class="tasks__title">Todo</h3>
       <ul id="incomplete-tasks">
         <li>
           <input type="checkbox">
@@ -36,7 +36,7 @@
           <button class="delete"><img src="./remove.svg" alt="delete button"></button>
         </li>
       </ul>
-      <h3>Completed</h3>
+      <h3 class="tasks__title">Completed</h3>
       <ul id="completed-tasks">
         <li>
           <input type="checkbox" checked>
